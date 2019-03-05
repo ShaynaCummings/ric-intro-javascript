@@ -27,14 +27,14 @@
 }
 
 .tomorrow-purple, pre .javascript .function, pre .keyword {
-  color: #e0d7e6
+  color: #d7aaf5
 }
 
 pre code {
   display: block;
   background: #fff;
-  color: ##e0d7e6;
-  padding: .5em
+  color: #d7aaf5;
+  padding: .7em;
 }
 
 pre .coffeescript .javascript, pre .javascript .xml, pre .tex .formula, pre .xml .cdata, pre .xml .css, pre .xml .javascript, pre .xml .vbscript {
