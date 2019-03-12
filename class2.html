@@ -52,28 +52,40 @@
           <h1>Introduction to JavaScript</h1>
           <h2>Class 2</h2>
         </section>
+        
 
         <!-- Review -->
         <section>
           <h3>Let's Look Back</h3>
-          <img src="dist/img/backwards-dance.jpg" alt="Woman looking backward as
-            she dances" />
-          <p class="credit">Photo credit: <a
-              href="http://www.flickr.com/photos/zeepack/4398082292/"
-              target="_blank">Deepak Bhatia</a> <a
-              href="http://creativecommons.org/licenses/by-nc/2.0/"
-              target="_blank">cc</a></p>
+          <img src="https://media.giphy.com/media/cfUMNY4RfGhEc/giphy.gif" alt="Pug turning around" />
+        </section>
+
+        <section>
+          <h3>Last week's Code Challenge</h3>
+          <p>Create a program to calculate the tip at a restaurant. It
+            should:</p>
+          <ul>
+            <li>Have variables for the bill <b>pre-tip</b> and the <b>tip
+                percentage</b>.</li>
+            <li>Calculate the total bill.</li>
+            <li>Output a sentence like "Your total bill, with tip, is
+              $14.75".</li>
+            <li>Bonus: Use <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed"
+                target="_blank"><code>toFixed()</code></a> to round the bill
+              total to 2 decimals.</li>
+          </ul>
         </section>
 
         <section>
           <h3>Code Search</h3>
           <p>In this code, spot the comment, variables, and operators.</p>
-          <pre><code class="javascript">var billPreTip = 10;
+          <pre><code class="javascript">var bill = 10;
 var tipPercent = 0.15; // Can be changed
 
-var billTip = billPreTip * tipPercent;
-var receipt = 'Meal: ' + billPreTip + ' Tip: ' + billTip +
-' Total: ' + (billPreTip + billTip);
+var totalBill = bill * tipPercent;
+var receipt = 'Meal: ' + bill + ' Tip: ' + totalBill +
+' Total: ' + (bill + totalBill);
 
 console.log(receipt);
 </code></pre>
@@ -83,11 +95,7 @@ console.log(receipt);
         <section>
           <h3>Functions</h3>
           <p>Functions are separable, reusable pieces of code.
-            <img src="dist/img/legos.jpg" alt="Pile of legos" />
-            <p class="credit">Photo credit:
-              <a href="http://www.flickr.com/photos/catzrule/9940388305/">Rick
-                Payette</a>
-              <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">cc</a>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Lego_bricks.jpg" alt="Pile of legos" />
             </section>
 
             <section>
@@ -114,9 +122,8 @@ console.log(receipt);
 
             <section>
               <h3>What's going on here?</h3>
-              <p>A function is a group of code you can reuse many times.
-                Whenever you invoke a function by using it's name, you tell the
-                browser to run the code inside the function.</p>
+              <p>A function is a group of code you can reuse many times.</p>
+              <p>Whenever you invoke a function by using its name, you tell the browser to run the code inside the function.</p>
               <p>You must declare a function before you can use it.</p>
             </section>
 
@@ -126,9 +133,15 @@ console.log(receipt);
                 function later in your code.</p>
             </section>
 
+
             <section>
               <h3>Arguments</h3>
               <p>Functions can accept input values, called <code>arguments</code>.</p>
+              <img src="https://i.imgur.com/giQDakJ.png" alt="Mr, Potato Head"/>
+            </section>
+
+            <section>
+              <h3>Arguments</h3>
               <pre><code class="javascript">function callKitten(kittenName){
   console.log('Come here, ' + kittenName + '!');
 }
@@ -195,15 +208,8 @@ var squareOfFive = square(5); // squareOfFive equals '25'
             <!-- Variable Scope -->
             <section>
               <h3>Variable Scope</h3>
-              <p>The scope of a variable determines where it's value is
-                accessible throughout your program.</p>
-              <img src="dist/img/footprints.jpg" alt="Footprints being washed
-                away" />
-              <p class="credit">Photo credit: <a
-                  href="http://www.flickr.com/photos/heyvikram/187950111/"
-                  target="_blank">_vikram</a> <a
-                  href="http://creativecommons.org/licenses/by-nc/2.0/"
-                  target="_blank">cc</a></p>
+              <p>The <em>scope</em> of a variable determines where its value is accessible throughout your program.</p>
+              <img src="https://imgur.com/7H6iMd5.png" alt="Cat looking out window at squirrel in feeder" />
             </section>
 
             <section>
@@ -239,13 +245,8 @@ console.log(awesomeGroup + ' is pretty awesome.'); // Won't work
             <!-- Boolean -->
             <section>
               <h3>Boolean Variables</h3>
-              <img src="dist/img/kitten-switch.jpg" alt="Kitten with light
+              <img src="https://s3-eu-west-1.amazonaws.com/dmania-images/black-cat-g00njed.gif" alt="Kitten turning on/off light
                 switch" />
-              <p class="credit">Photo credit: <a
-                  href="http://www.flickr.com/photos/elycefeliz/5726163170/"
-                  target="_blank">elycefeliz</a> <a
-                  href="http://creativecommons.org/licenses/by-nc/2.0/"
-                  target="_blank">cc</a></p>
             </section>
 
             <section>
@@ -274,16 +275,11 @@ var isMarried;     // remember a variable with no value is undefined</code></pre
             <!--If/Then-->
             <section>
               <h3>Control Flow</h3>
-              <img src="dist/img/fork-path.jpg" alt="Forked path" />
-              <p class="credit">Photo credit: <a
-                  href="http://www.flickr.com/photos/dennism2/1504087870/"
-                  target="_blank">DennisM2</a> <a
-                  href="http://creativecommons.org/licenses/by-nc/2.0/"
-                  target="_blank">cc</a></p>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Fork_in_the_road_-_geograph.org.uk_-_1355424.jpg" alt="Forked path" />
             </section>
 
             <section>
-              <h3>The if statement</h3>
+              <h3>The "if" statement</h3>
               <p>Use <code>if</code> statements to decide which lines of code to
                 execute, based on a condition.</p>
               <pre><code class="javascript">if (condition) {
@@ -299,10 +295,10 @@ if (age &gt; 18) {
 
             <section>
               <h3>Comparison Operators</h3>
-              <table class="smalltext">
+              <table class="comparison">
                 <thead>
                   <tr>
-                    <th>Example</th>
+                    <th class="example-table">Example</th>
                     <th>Name</th>
                     <th>Result</th>
                   </tr>
@@ -365,12 +361,7 @@ if (age &gt; 18) {
             <section>
               <h3>Watch out!</h3>
               <p>Don't mix up <code>=</code> and <code>==</code> and <code>===</code></p>
-              <img src="dist/img/caution.jpg" alt="Caution Tape" />
-              <p class="credit">Photo credit: <a
-                  href="http://www.flickr.com/photos/pictureperfectpose/76138988/"
-                  target="_blank">Eugene Zemlyanskiy</a> <a
-                  href="http://creativecommons.org/licenses/by-nc/2.0/"
-                  target="_blank">cc</a></p>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Caution_sign_used_on_roads_pn.svg/600px-Caution_sign_used_on_roads_pn.svg.png" alt="Caution Sign" />
             </section>
 
             <section>
@@ -437,7 +428,7 @@ if (age &gt;= 35) {
             <!-- Logical Operators -->
             <section>
               <h3>Logical Operators</h3>
-              <table>
+              <table class="comparison">
                 <thead>
                   <tr>
                     <th>Example</th>
@@ -489,12 +480,7 @@ if (age &gt;=30 &amp;&amp; yearsAsCitizen &gt; 9) {
             <!-- Final slides-->
             <section>
               <h3>You did it!</h3>
-              <img src="dist/img/kitten-yay.jpg" alt="Happy cat" />
-              <p class="credit">Photo credit: <a
-                  href="http://www.flickr.com/photos/laura-kali/7399310732/"
-                  target="_blank">OnceAndFutureLaura</a> <a
-                  href="http://creativecommons.org/licenses/by-sa/2.0/"
-                  target="_blank">cc</a></p>
+              <img src="https://media0.giphy.com/media/ytxWgXj3PR5TO/giphy.gif?cid=3640f6095c8737ba79534d6659e265ba" alt="Seinfeld cast dancing" />
             </section>
 
             <section>
