@@ -54,16 +54,26 @@
           <h2>Class 3</h2>
         </section>
 
+        <section>
+          <h3>Last Week</h3>
+          <p>Functions, boolean variables, if/then/else statements</p>
+          <br />
+          <h3>Code Challenge</h3>
+          <p>I want to figure out if I should buy a T pass next month.</p>
+              <p>The pass costs $84.</p>
+              <p>One subway ride costs $2.25.</p>
+              <p>Write a function that takes in the number of rides as an argument, and returns a recommendation about whether I should buy the T pass or just pay for each ride.</p>
+        </section>
+
+        <section>
+          <h3>This Week: more programming concepts & data types!</h3>
+          <p>Loops, arrays, objects, and methods</p>
+        </section>
+
         <!-- Loops -->
         <section>
           <h3>Loops</h3>
-          <img src="dist/img/hula-hoop.jpg" alt="Lego stormtrooper inside key
-            ring" />
-          <p class="credit">Photo credit: <a
-              href="http://www.flickr.com/photos/steve_pires/8430087504/"
-              target="_blank">Steve Pires</a> <a
-              href="http://creativecommons.org/licenses/by-nc/2.0/"
-              target="_blank">cc</a></p>
+          <img src="https://media.giphy.com/media/fDO2Nk0ImzvvW/giphy.gif" alt="Grandpa simpson walking into a room and walking out" />
         </section>
 
         <section>
@@ -83,20 +93,14 @@ while (bottlesOfBeer &gt; 0) {
           <h3>Infinite Loops</h3>
           <p>Make sure something changes in the loop, or your loop will go on
             forever...</p>
-          <img src="dist/img/infinite-loop.jpg" alt="Spiral that goes on toward
-            infinity" />
-          <p class="credit">Photo credit: <a
-              href="http://www.flickr.com/photos/samueljohn/5348462863/"
-              target="_blank">Samuel John</a> <a
-              href="http://creativecommons.org/licenses/by-nc/2.0/"
-              target="_blank">cc</a></p>
+          <img src="https://i.kym-cdn.com/photos/images/newsfeed/000/756/306/31e.gif" alt="infinity loop of people wearing shirts with each others faces" />
         </section>
 
         <section>
           <h3>For loops</h3>
           <p><code><a
                 href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for">for</a></code>
-            loops are very similar, but you declare a counter in the statement.</p>
+            loops are similar to while loops, but you declare a counter in the statement - for example, starting at 1 and counting up to 10 iterations.</p>
           <pre><code class="javascript">// will count 1 to 10
 for (var i = 1; i &lt;= 10; i++) {
   console.log(i);
@@ -140,9 +144,12 @@ for (var i = 100; i &lt;= 200; i++) {
 
         <section>
           <h3>Let's Develop It</h3>
-          <p>Write a loop that gives you the 9's times table,<br /> from
-            <strong>9 x 1 = 9</strong> to <strong>9 x 12 = 108</strong>.</p><br
-            />
+          <p>Write a loop that prints out the 9's times table:<br />
+            <strong>9 x 1 = 9</strong><br />
+            <strong>9 x 2 = 18</strong><br />
+            <strong>9 x 3 = 27</strong><br />
+            <strong>...</strong><br />
+            <strong>9 x 12 = 108</strong>
           <p>Finish early? Try using a loop inside a loop to write all the times
             tables, from 1 to 12.</p>
         </section>
@@ -150,12 +157,7 @@ for (var i = 100; i &lt;= 200; i++) {
         <!-- Arrays -->
         <section>
           <h3>Arrays</h3>
-          <img src="dist/img/kitten-group.jpg" alt="Group of kittens" />
-          <p class="credit">Photo credit: <a
-              href="http://www.flickr.com/photos/pasotraspaso/4444291348/"
-              target="_blank">Jesus Solana</a> <a
-              href="http://creativecommons.org/licenses/by-nc/2.0/"
-              target="_blank">cc</a></p>
+          <img src="https://i.pinimg.com/originals/1f/6e/6c/1f6e6c251f5e6cfd6bfc54cf572b0ed4.jpg" alt="cats stacked in boxes" />
         </section>
 
         <section>
@@ -188,19 +190,19 @@ console.log(rainbowColors.length);</code></pre>
         <section>
           <h3>Using Arrays</h3>
           <p>You can access items with <strong>bracket notation</strong> by
-            using the position of the item you want.</p>
+            using the position (<strong>index</strong>) of the item you want.</p>
           <pre><code class="javascript">var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green',
 'Blue', 'Indigo', 'Violet'];
 
 var firstColor = rainbowColors[0];
 var lastColor  = rainbowColors[6];</code></pre><br>
-          <p>JS arrays are <strong>zero-indexed</strong>, so counting starts at
+          <p>JavaScript arrays are <strong>zero-indexed</strong>, so counting starts at
             0.</p>
         </section>
 
         <section>
           <h3>Changing arrays</h3>
-          <p>You can use bracket notation to change an item in an array</p>
+          <p>You can use bracket notation to change (reassign) an item in an array</p>
           <pre><code class="javascript">var myFavoriteThings = ['Broccoli', 1024, 'Sherlock'];
 
 myFavoriteThings[0] = 'Asparagus';</code></pre>
@@ -208,8 +210,8 @@ myFavoriteThings[0] = 'Asparagus';</code></pre>
 
         <section>
           <h3>Expanding arrays</h3>
-          <p>Arrays do not have a fixed length. You can use <code><a
-                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push">push</a></code>
+          <p>Arrays do not have a fixed length. You can use the <code><a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push">push</a></code> method
             to add something to an array.</p>
           <pre><code class="javascript">var myFavoriteThings = ['Broccoli', 1024, 'Sherlock'];
 
@@ -225,12 +227,7 @@ myFavoriteThings.push('Dancing');</code></pre>
         <!-- Arrays and loops-->
         <section>
           <h3>Arrays + loops = BFF</h3>
-          <img src="dist/img/holding-hands.jpg" alt="Couple holding hands" />
-          <p class="credit">Photo credit: <a
-              href="http://www.flickr.com/photos/mtsofan/8221708017/"
-              target="_blank">John</a> <a
-              href="http://creativecommons.org/licenses/by-nc/2.0/"
-              target="_blank">cc</a></p>
+          <img src="https://media.giphy.com/media/9faZOMiULJD1u/giphy.gif" alt="cat and dog bffs" />
         </section>
 
         <section>
@@ -391,25 +388,7 @@ jolene.eat('pizza');</code></pre>
           <!-- Final slides-->
           <section>
             <h3>You did it!</h3>
-            <img src="dist/img/fireworks.jpg" alt="Fireworks" />
-            <p class="credit">Photo credit: <a
-                href="http://www.flickr.com/photos/markwdw85/9425240584/"
-                target="_blank">Mark W.</a> <a
-                href="http://creativecommons.org/licenses/by-nc/2.0/"
-                target="_blank">cc</a></p>
-          </section>
-
-          <section>
-            <h3>Resources</h3>
-            <ul>
-              <li><a
-                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
-                  target="_blank">JavaScript Guide</a>, from the Mozilla
-                Developers Network.</li>
-              <li><a href="http://www.codecademy.com/tracks/javascript"
-                  target="_blank">Code Academy</a>, with interactive JavaScript
-                lessons to help you review.</li>
-            </ul>
+            <img src="https://media1.tenor.com/images/062b055d639aaa76d402617a2056fe8a/tenor.gif?itemid=12310143" alt="Dog dancing" />
           </section>
 
           <section>
